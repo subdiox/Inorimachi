@@ -80,7 +80,7 @@ end
 array.each do |val|
     video_id = val[0].split("/")[4].split("?")[0]
     title = val[1].chomp.gsub("/", ":").strip
-    command = "youtube-dl -o \'いのりっすん/" + title + ".mp4\' \'http://players.brightcove.net/4504957038001/default_default/index.html?videoId=ref\:\'" + video_id
+    command = "youtube-dl -o \'いのりっすん" + File::Separator + title + ".mp4\' \'http://players.brightcove.net/4504957038001/default_default/index.html?videoId=ref\:\'" + video_id
     Open3.popen3(command) do |i, o, e, w|
         o.each do |line| puts line end
         e.each do |line| puts line end
