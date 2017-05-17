@@ -9,6 +9,6 @@
 - youtube-dl
 
 # Usage
-You need smam.jp account.
+You need premium account of smam.jp.
 
     ruby inorimachi.rb [Email] [Password]
