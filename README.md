@@ -4,11 +4,15 @@
 - Linux
 
 # Requirements
-- Ruby 2.x
-- curl
+- Python 3.x
 - youtube-dl
 
 # Usage
-You need premium account of smam.jp.
-
-    ruby inorimachi.rb [Email] [Password]
+Before using, you need to execute following:
+```
+pip install requests
+```
+You don't need premium account of inorimachi.
+```
+python inorimachi.py
+```
