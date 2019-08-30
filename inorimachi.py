@@ -2,7 +2,7 @@ import requests
 import json
 import subprocess
 
-for id in range(139, 202):
+for id in range(100, 400):
   print(f'Trying to retrieve data of inorin video ID: {id}')
   url = f'https://ssl-cache.stream.ne.jp/www50/eqb068jrbh/jmc_pub/eq_meta/v1/{id}.jsonp'
   response = requests.get(url)
