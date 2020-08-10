@@ -12,7 +12,7 @@ for id in range(100, 400):
     try:
       json_data = json.loads(result)
       title = json_data['movie']['title']
-      if title.endswith('公開用.mp4'): # There seems no other way to determine which video is inorin's one...
+      if title.endswith('用.mp4'): # There seems no other way to determine which video is inorin's one...
         print(f'Downloading inorin video ID: {id}')
         movie_path = json_data['movie']['movie_list_hls'][0]['url']
         movie_url = json_data['movie']['movie_url_mobile'].split(movie_path.split('/')[0])[0] + movie_path
